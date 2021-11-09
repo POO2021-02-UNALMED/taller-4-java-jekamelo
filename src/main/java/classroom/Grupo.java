@@ -1,4 +1,4 @@
-package main.java.classroom;
+package classroom;
 
 public class Grupo {
 
