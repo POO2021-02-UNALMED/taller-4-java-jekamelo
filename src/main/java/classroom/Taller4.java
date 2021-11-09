@@ -1,4 +1,4 @@
-package classroom;
+package main.java.classroom;
 
 public class Taller4 {
 

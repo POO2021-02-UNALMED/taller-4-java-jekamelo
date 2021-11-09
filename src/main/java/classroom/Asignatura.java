@@ -1,4 +1,4 @@
-package classroom;
+package main.java.classroom;
 
 public class Asignatura {
 
@@ -8,16 +8,11 @@ public class Asignatura {
     int codigoExterno;
 
     Asignatura() {
-        this("Sin nombre");
-        this(0);
+    	this(0);
     }
 
     Asignatura(int codigoInterno) {
-        this("Sin nombre", codigoInterno, 0);
-    }
-
-    Asignatura(int codigoExterno) {
-        this("Sin nombre", 0, codigoExterno);
+        this("Sin nombre", codigoInterno, codigoInterno);
     }
 
     Asignatura(String nombre) {
@@ -36,14 +31,12 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
+    void cambiarDatos(int codigo) {
+        this.codigoInterno = codigo;
+        this.codigoExterno = codigo;
     }
 
-    void cambiarDatos(int codigoExterno) {
-        this.codigoExterno = codigoExterno;
-    }
-
+ 
     void cambiarDatos(String nombre) {
         this.nombre = nombre;
     }
@@ -52,7 +45,4 @@ public class Asignatura {
         this.codigoInterno = codigoInterno;
     }
     
-    public void setCodigoInterno(double codigoInterno) {
-        this.codigoInterno = (int) codigoInterno;
-    }
 }
